@@ -1,3 +1,11 @@
+import PropTypes from 'prop-types';
+/**
+ * @param {Object} props
+ * @param {number} [props.column]
+ * @param {React.ReactNode} props.children
+ * @returns {JSX.Element}
+ */
+
 export default function Grid({ children, column }) {
     const columnClass = (() => {
         switch (column) {
@@ -20,3 +28,8 @@ export default function Grid({ children, column }) {
         </div>
     );
 }
+
+Grid.propTypes = {
+    children: PropTypes.node.isRequired,
+    column: PropTypes.number,
+};

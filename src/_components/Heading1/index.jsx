@@ -1,3 +1,10 @@
+import PropTypes from 'prop-types';
+/**
+ * @param {Object} props
+ * @param {string} props.title
+ * @returns {JSX.Element}
+ */
+
 import Container from '../Container';
 
 export default function Heading1({ title }) {
@@ -9,3 +16,7 @@ export default function Heading1({ title }) {
     </div>
   );
 }
+
+Heading1.propTypes = {
+    title: PropTypes.string.isRequired,
+};

@@ -1,3 +1,10 @@
+import PropTypes from 'prop-types';
+/**
+ * @param {Object} props
+ * @param {string} props.title
+ * @returns {JSX.Element}
+ */
+
 export default function Heading3({ title }) {
   return (
     <h3 className="font-bold text-lg md:text-3xl text-gray-900 text-center mt-9 md:mt-11 mb-8">
@@ -6,3 +13,7 @@ export default function Heading3({ title }) {
     </h3>
   );
 }
+
+Heading3.propTypes = {
+    title: PropTypes.string.isRequired,
+};

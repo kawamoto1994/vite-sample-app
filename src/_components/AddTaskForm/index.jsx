@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Box from '../Box';
+import Button from '../Button';
 
 export default function AddTaskForm() {
   const [todo, setTodo] = useState("");
@@ -27,10 +28,7 @@ export default function AddTaskForm() {
             onChange={(e) => setTodo(e.target.value)}
           />
         </label>
-        <button
-            className="mt-5 md:mt-8 py-4 px-5 md:px-8 bg-secondary text-white rounded-xl hover:bg-secondary-dark text-md md:text-lg font-medium"
-            onClick={handleClick}
-          >タスクを追加する</button>
+        <Button title="タスクを追加する" className="mt-5 md:mt-8" onClick={handleClick} />
         <div className="mt-4 md:mt-6">
           {todos.map((todo, index) => (
             <label className="block mt-3 text-md md:text-lg text-gray-900" key={index}>
@@ -41,6 +39,5 @@ export default function AddTaskForm() {
         </div>
     </fieldset>
     </Box>
-    
   );
 }

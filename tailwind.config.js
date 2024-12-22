@@ -38,7 +38,6 @@ export default {
           50: '#f9f9f9',
           900: '#484d48',
         },
-        
       },
       fontFamily: {
         sans: ['Noto Sans JP, "ヒラギノ角 Pro W3", "Hiragino Kaku Pro W3", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif'],
@@ -82,7 +81,7 @@ export default {
         DEFAULT: '16px',
       },
       screens: {
-        sm: '100%', 
+        sm: '100%',
         md: '100%',
         lg: '1200px',
         xl: '1200px',
