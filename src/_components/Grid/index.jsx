@@ -14,9 +14,9 @@ export default function Grid({ children, column }) {
             case 2:
             return "grid-cols-1 md:grid-cols-2";
             case 3:
-            return "grid-cols-3 md:grid-cols-2 lg:grid-cols-3";
+            return "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
             case 4:
-            return "grid-cols-4 md:grid-cols-2 lg:grid-cols-4";
+            return "grid-cols-1 md:grid-cols-2 lg:grid-cols-4";
             default:
             return "grid-cols-1"; // デフォルト値
         }
