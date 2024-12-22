@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2family=Raleway:wght@100&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container > :first-child {
+        margin-top: 0;
+    }
+    h1 + *,
+    h2 + *,
+    h3 + *,
+    h4 + *,
+    h5 + *,
+    h6 + *,
+    .c-catch + * {
+      margin-top: 0 !important;
+    }
+
+    .c-text {
+      @apply mt-8;
+    }
+
+    .c-text a {
+      @apply text-indigo-900 underline;
+    }
+
+    .c-grid .grid__item > :first-child {
+      margin-top: 0;
+    }
+}
