@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import '../assets/css/common.css';
 import Container from '../_components/Container';
 import Heading1 from '../_components/Heading1';
@@ -132,4 +132,11 @@ export default function PartsSet() {
   );
 }
 
-ReactDOM.render(<PartsSet />, document.getElementById('root'));
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container); // createRoot を使用してルートを作成
+
+root.render(
+  <React.StrictMode>
+    <PartsSet />
+  </React.StrictMode>
+);
