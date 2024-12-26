@@ -15,10 +15,9 @@ export default function AddTaskForm() {
 
   return (
     <Box>
-      <fieldset>
-        <p className="font-bold text-lg md:text-3xl text-gray-900 mb-5 md:mb-8">あなたの今日のタスクは？</p>
-        <label>
-          <p className="text-md md:text-lg text-gray-900">タスクを追加する<span className="text-gray-500 ml-4">（例）原稿を書く</span></p>
+      <p className="font-bold text-lg md:text-3xl text-gray-900 mb-5 md:mb-8">あなたの今日のタスクは？</p>
+      <label>
+          <span className="text-md md:text-lg text-gray-900">タスクを追加する<span className="text-gray-500 ml-4">（例）原稿を書く</span></span>
           <input
             type="text"
             aria-labelledby="title"
@@ -27,8 +26,9 @@ export default function AddTaskForm() {
             value={todo}
             onChange={(e) => setTodo(e.target.value)}
           />
-        </label>
-        <Button title="タスクを追加する" className="mt-5 md:mt-8" onClick={handleClick} />
+      </label>
+      <Button title="タスクを追加する" className="mt-5 md:mt-8" onClick={handleClick} />
+      <fieldset>
         <div className="mt-4 md:mt-6">
           {todos.map((todo, index) => (
             <label className="block mt-3 text-md md:text-lg text-gray-900" key={index}>

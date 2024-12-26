@@ -11,7 +11,7 @@ export default function Heading2({ title }) {
       <span className="block">{title}</span>
       <span className="block flex justify-center mt-6">
         <picture>
-          <source src="/assets/images/i_circle.svg"  media="(min-width: 768px)" width={40} height={40} />
+          <source srcSet="/assets/images/i_circle.svg" media="(min-width: 768px)" width={40} height={40} />
           <img src="/assets/images/i_circle.svg" alt="" width={24} height={24} />
         </picture>
       </span>
