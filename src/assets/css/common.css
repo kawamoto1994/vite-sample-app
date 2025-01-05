@@ -26,7 +26,7 @@
       @apply text-indigo-900 underline;
     }
 
-    .c-grid .grid__item > :first-child {
+    .c-grid .c-grid__item > :first-child {
       margin-top: 0;
     }
 }

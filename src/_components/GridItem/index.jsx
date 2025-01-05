@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
  */
 
 export default function GridItem({ children }) {
-    return <div className="c-grid__item list-none">{ children }</div>;
+    return <div className="c-grid__item">{ children }</div>;
 }
 
 GridItem.propTypes = {
